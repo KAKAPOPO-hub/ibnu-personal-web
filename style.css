@@ -1,0 +1,565 @@
+/* === FONT & RESET === */
+
+html{
+  scroll-behavior: smooth;
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Fredoka", sans-serif;
+}
+
+body {
+  background-color: #166f5c;
+  color: #fff;
+  overflow-x: hidden;
+}
+
+/* === HEADER / NAVBAR === */
+
+header {
+  background: linear-gradient(to bottom, #f8e36b, #f5d548);
+  padding: 10px 0;
+  box-shadow: 0 3px 8px rgba(0, 0, 0, 0.2);
+   position: sticky;
+  top:0;
+  z-index: 999;
+
+}
+
+.nav-container {
+  display: flex;
+  justify-content: center;;
+}
+
+.navbar {
+  width: 90%;
+  background: #fffdf1;
+  border-radius: 40px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 8px 30px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+}
+
+/* === LOGO SECTION === */
+.logo-section {
+  display: flex;
+  align-items: center;
+  gap: 7px;
+  margin-left: 1rem;
+}
+
+.logo {
+  font-weight: 700;
+  color: #f0c33c;
+  font-size: 1.3rem;
+  text-shadow: 1px 1px #555;
+  letter-spacing: 2px;
+}
+
+.seclog {
+  font-weight: 700;
+  font-size: 1.3rem;
+  color: #1f6b5a;
+}
+
+/* === MENU === */
+.menu a {
+  text-decoration: none;
+  color: #2d5e4c;
+  font-weight: 600;
+  margin: 0 15px;
+  transition: all 0.2s ease-in-out;
+}
+
+.menu a:hover {
+  color: #f2b93b;
+  transform: translateY(-2px);
+}
+
+/* === SOSIAL MEDIA === */
+.sosmed-link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  justify-content: space-between;
+  width: 100%;
+  margin-top: 20px;
+}
+
+.sosmed-link a {
+  background-color: #f6d34a;
+  color: #184c3e;
+  font-weight: 700;
+  font-size: 1.5rem;
+  padding: 15px 80px;
+  border-radius: 25px;
+  text-decoration: none;
+  box-shadow: 0 4px 0 #1c4d3e;
+  transition: all 0.2s ease;
+
+}
+
+
+.sosmed-link a:hover {
+  background-color: #ffe781;
+  transform: translateY(2px);
+  box-shadow: 0 2px 0 #1c4d3e;
+  
+} 
+
+/* === MAIN SECTION === */
+
+
+/* === TITLE AREA === */
+.title .H2 {
+  font-size: 1.3rem;
+  color: #fffde7;
+  background: #1e5a48;
+  padding: 5px 15px;
+  border-radius: 10px;
+}
+
+.title {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+/* === BUTTON === */
+
+.button:hover {
+  background-color: #ffe781;
+  transform: translateY(2px);
+  box-shadow: 0 2px 0 #1c4d3e;
+}
+
+/* === FOTO & TEKS BAWAH === */
+
+
+main {
+  background-color: #166f5c; 
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 160px 80px 120px 80px; 
+}
+
+.Main_isi {
+  display: flex;
+  gap: 60px;
+}
+
+/* === FOTO KIRI === */
+.gambar {
+  width: auto;
+  max-width: 400px;
+  flex: 1 300px;
+  height: auto;
+  border-radius: 20px;
+  background-color: #f6d34a;
+  padding: 12px;
+  transform: rotate(-4deg);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.25);
+  transition: all 0.3s ease;
+  margin-left: 9rem;
+  margin-right: 30px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  align-items: end;
+}
+
+.gambar:hover {
+  transform: rotate(0deg) scale(1.05);
+}
+
+/* === TEKS KANAN === */
+.text-content {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  max-width: 600px;
+  gap: 40px; 
+  margin-left: 5rem;
+}
+
+.title .H1 {
+  font-size: 6rem;
+  font-weight: 800;
+  color: #f6d34a;
+  text-shadow: 5px 5px 0px #114739;
+  margin-bottom: 5px;
+  text-align: center;
+}
+
+/* Subjudul */
+.title .H2 {
+  font-size: 2.5rem;
+  color: #fffbe1;
+  font-weight: 600;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  margin-bottom: 25px;
+  text-align: center;
+}
+
+/* Paragraf */
+.text-content p {
+  font-size: 1.1rem;
+  line-height: 1.8;
+  letter-spacing:1.5px;
+  background-color: #f6d34a;
+  padding: 20px 25px;
+  border-radius: 15px;
+  color: #184c3e;
+  font-weight: 500;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.25);
+  text-align: center;
+}
+
+/* === MY SKILLS SECTION === */
+#isi{
+margin-top: 1rem;
+text-align: center;
+}
+
+.my-skill{
+  display: flex;
+  justify-content: center;
+  font-size: 2.5rem;
+  text-shadow: 5px 5px 0px #114739;;
+  color:#f6d34a;
+  margin-bottom: 3rem;
+}
+
+.img-container{
+  display: flex;
+  gap: 3rem;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin: 20px 0;
+}
+
+.img-container img {
+  width: 80px;
+  height: auto;
+  transition: all 0.3s ease;
+  margin: 15px;
+}
+
+.img-container img:hover {
+  transform: scale(1.1);
+}
+
+.img-desain {
+  display: flex;
+  gap: 3rem;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin: 30px 0;
+}
+
+.img-desain img {
+  width: 80px;
+  height: auto;
+  transition: all 0.3s ease;
+  margin: 15px;
+
+}
+
+
+
+
+
+/* === MY PROJECT SECTION === */
+.my-project {
+  margin-top: 2rem;
+  text-align: center;
+}
+
+.project-container h1 {
+  font-size: 2.5rem;
+  color: #f6d34a;
+  text-shadow: 5px 5px 0px #114739;
+  margin-bottom: 3rem;
+}
+
+.project {
+  display: flex;
+  gap: 2rem;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin: 30px 20px;
+}
+
+.project img {
+  width: 200px;
+  height: 200px;
+  object-fit: cover;
+  border-radius: 15px;
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.25);
+  transition: all 0.3s ease;
+}
+
+.project img:hover {
+  transform: scale(1.08) translateY(-8px);
+  /* box-shadow: 0 10px 30px rgba(236, 235, 234, 0.3); */
+}
+
+
+/* ===== FORM CONTAINER ===== */
+.form-container {
+  background: #166f5c;                  /* warna gelap biar mewah */
+  padding: 3rem 1.5rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 4rem;
+  /* border-top: 1px solid #114739; */
+}
+
+.form-container form {
+  background: #1a1a1a;
+  padding: 2rem 2.5rem;
+  border-radius: 1rem;
+  width: 100%;
+  max-width: 450px;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  box-shadow: 0 4px 20px rgba(0,0,0,0.4);
+}
+
+/* Label */
+.form-container label {
+  font-size: 1rem;
+  font-weight: 600;
+  color: #fff;
+}
+
+/* Input & Textarea */
+.form-container .input-contact,
+.form-container textarea {
+  width: 100%;
+  padding: 0.8rem 1rem;
+  margin-top: 0.3rem;
+  border-radius: 0.6rem;
+  border: 1px solid #444;
+  background: #222;
+  color: #fff;
+  font-size: 1rem;
+  outline: none;
+  transition: all 0.2s ease;
+}
+
+.form-container .input-contact:focus,
+.form-container textarea:focus {
+  border-color: #0af;
+  box-shadow: 0 0 5px #0af;
+}
+
+/* Tombol submit */
+.form-container button,
+.form-container input[type="submit"] {
+  padding: 0.8rem;
+  border-radius: 0.5rem;
+  border: none;
+  background: #0af;
+  color: #000;
+  font-size: 1.1rem;
+  font-weight: 600;
+  cursor: pointer;
+  margin-top: 0.5rem;
+  transition: 0.3s;
+}
+
+.form-container button:hover,
+.form-container input[type="submit"]:hover {
+  background: #08c;
+  transform: translateY(-2px);
+}
+
+
+
+
+
+/* === RESPONSIVE === */
+@media (max-width: 1025px) {
+  main {
+    padding: 100px 40px 80px 40px;
+  }
+
+  .Main_isi {
+    gap: 40px;
+  }
+
+  .title .H1 {
+    font-size: 4.5rem;
+  }
+
+  .title .H2 {
+    font-size: 1.8rem;
+  }
+
+  .text-content p {
+    font-size: 0.95rem;
+  }
+
+  .project img {
+    width: 160px;
+    height: 160px;
+  }
+}
+
+@media (max-width: 768px) {
+  main {
+    flex-direction: column;
+    padding: 80px 30px 60px 30px;
+  }
+
+  .Main_isi {
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
+  }
+
+  .text-content {
+    flex-direction: column;
+    margin-left: 0;
+    max-width: 100%;
+  }
+
+  .gambar {
+    margin-left: 0;
+    max-width: 300px;
+  }
+
+  .title .H1 {
+    font-size: 3rem;
+  }
+
+  .title .H2 {
+    font-size: 1.4rem;
+  }
+
+  .text-content p {
+    font-size: 0.9rem;
+  }
+
+  .my-2321 h1 {
+    font-size: 2rem;
+  }
+
+  .project-container h1 {
+    font-size: 2rem;
+  }
+
+  .project img {
+    width: 140px;
+    height: 140px;
+  }
+
+  .footer-container h2 {
+    font-size: 1rem;
+  }
+}
+
+@media (max-width: 480px) {
+  main {
+    padding: 60px 20px 40px 20px;
+  }
+
+  .title .H1 {
+    font-size: 2rem;
+  }
+
+  .title .H2 {
+    font-size: 1rem;
+  }
+
+  .text-content p {
+    font-size: 0.8rem;
+    padding: 15px 15px;
+  }
+
+  .my-skill h1 {
+    font-size: 1.5rem;
+  }
+
+  .project-container h1 {
+    font-size: 1.5rem;
+  }
+
+  .project img {
+    width: 120px;
+    height: 120px;
+  }
+
+  .footer-container h2 {
+    font-size: 0.9rem;
+  }
+
+  .img-container {
+    gap: 1.5rem;
+  }
+
+  .img-container img,
+  .img-desain img {
+    width: 60px;
+    margin: 10px;
+  }
+
+  .gambar {
+    max-width: 200px;
+  }
+}
+/* MY PROJECT */
+#my-project{
+  margin-top: 6rem;
+  text-align: center;
+}
+.project-container h1{
+  justify-content: center;
+  font-size: 2.5rem;
+  text-shadow: 5px 5px 0px #114739;;
+  color:#f6d34a;
+  margin-bottom: 3rem;
+}
+
+.project{
+  display: grid;
+  grid-template-columns: repeat(3,1fr);
+  gap:1rem;
+  margin-top: 20px;
+  margin-left: 13rem;
+}
+
+.project img{
+  width: 200px;
+  height: 200px;
+  object-fit: cover;
+  border-radius: 10px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
