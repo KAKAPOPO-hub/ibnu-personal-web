@@ -1,21 +1,20 @@
-import "index.html"
+document.addEventListener('DOMContentLoaded', () => {
+  const hamburger = document.getElementById('hamburger');
+  const navMenu = document.getElementById('nav-menu');
 
+  if (hamburger && navMenu) {
+    hamburger.addEventListener('click', () => {
+      navMenu.classList.toggle('active');
+    });
 
-const form= document.getElementById("form");
-const email= document.getElementById("email");
-const subject= document.getElementById("subject");
-const message= document.getElementById("pesan");
-const button = document.getElementById("addBtn")
- 
-button.addEventListener('click', () =>  {
-    form.value ="";
-    email.value="";
-    subject.value="";
-    message.value="";
-
-})
-
-
+    const menuItems = navMenu.querySelectorAll('a');
+    menuItems.forEach(item => {
+      item.addEventListener('click', () => {
+        navMenu.classList.remove('active');
+      });
+    });
+  }
+});
 
 
  
